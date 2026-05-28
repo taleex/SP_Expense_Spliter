@@ -1,12 +1,13 @@
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
+import { Button } from "./ui/button";
+import { Input } from "./ui/input";
 
 export default function AuthForm() {
   return (
-    <form className="flex flex-col gap-2">
-      <Input type="email" placeholder="Email" />
-      <Input type="password" placeholder="Password" />
-      <Button type="submit">Login</Button>
-    </form>
+    <div className="flex flex-col items-center justify-center gap-4">
+        <Input placeholder="Email" />
+        <Input placeholder="Password" />
+        <Button className="w-full">Login</Button>
+        <p className="text-sm text-muted-foreground">Don't have an account? <a href="/auth/signup" className="text-primary">Sign up</a></p>
+    </div>
   )
 }

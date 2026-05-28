@@ -1,4 +1,4 @@
-import AuthForm from "@/src/components/auth-form";
+import AuthForm from "@/components/auth-form";
 
 export default function layout({ children }: { children: React.ReactNode }) {
   return (
